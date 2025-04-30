@@ -14,7 +14,7 @@ public class UserRestController {
 
   @GetMapping("/usuarios")
   public UserDTO detalles() {
-    User user = new User("Jeremy", "Fuentes");
+    User user = new User("Jeremy", "Fuentes", "jeremyfuentes@gmail.com");
     UserDTO userDto = new UserDTO();
     userDto.setUser(user);
     userDto.setTitle("User Details");
